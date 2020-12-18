@@ -7,7 +7,9 @@ import { AppComponent } from "./app.component";
 import { ProductService } from "./productservice";
 import {DialogModule} from 'primeng/dialog';
 import { TableModule } from "primeng/table";
+import {DynamicDialogModule} from 'primeng/dynamicdialog';
 import { userService } from "./userservice";
+import { userDetailsDialog } from "./userDetailsDialog";
 
 
 @NgModule({
@@ -18,9 +20,10 @@ import { userService } from "./userservice";
     HttpClientModule,
     FormsModule,
     DialogModule,
-    HttpClientModule
+    HttpClientModule,
+    DynamicDialogModule    
   ],
-  declarations: [AppComponent],
+  declarations: [AppComponent,userDetailsDialog],
   bootstrap: [AppComponent],
   providers: [userService]
 })
