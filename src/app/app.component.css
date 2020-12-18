@@ -1,0 +1,15 @@
+.inline-block-child {
+  display: inline-block;
+}
+.parent {
+  padding: 1rem;
+  margin-top: 3.5rem
+}
+.child {
+  padding: 1rem;
+}
+
+.hyperLink{
+  text-decoration-color: blue;
+   text-decoration: underline;
+}
