@@ -25,8 +25,8 @@ if(searchedString != undefined){
 this.userListUrl='';
   }
 
-  public getUserDetails(id: string): Observable<userDetails> {
-    return this.http.get<userDetails>(`${this.userDetailsUrl}/${id}`);
+  public getUserDetails(userName: string): Observable<userDetails> {
+    return this.http.get<userDetails>(`${this.userDetailsUrl}/${userName}`);
   }
   public getUsers(): Observable<userDetails[]> {
     return this.http.get<userDetails[]>(this.userDetailsUrl);
